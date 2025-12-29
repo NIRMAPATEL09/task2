@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sitara Institute</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-gradient">SITARA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-light ms-lg-4 d-none d-lg-block">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <!-- Reuse canvas but maybe with lower opacity in CSS if complex logic needed, for now same script is fine -->
+        <canvas id="domeCanvas" style="opacity: 0.3;"></canvas>
+
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="glass-card p-5">
+                        <h2 class="text-center mb-4">Get in <span class="text-gradient">Touch</span></h2>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bg-transparent text-white border-secondary"
+                                    id="name" placeholder="Name">
+                                <label for="name" class="text-secondary">Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control bg-transparent text-white border-secondary"
+                                    id="email" placeholder="name@example.com">
+                                <label for="email" class="text-secondary">Email address</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control bg-transparent text-white border-secondary"
+                                    placeholder="Leave a comment here" id="message" style="height: 120px"></textarea>
+                                <label for="message" class="text-secondary">Message</label>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary py-3">Send Message</button>
+                            </div>
+                        </form>
+
+                        <div class="text-center mt-5 pt-4 border-top border-secondary">
+                            <p class="mb-1 text-secondary">📍 Sitara Institute Campus, Tech City, India</p>
+                            <p class="mb-1 text-secondary">📞 +91 98765 43210</p>
+                            <p class="text-secondary">✉️ admissions@sitara.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Sitara Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
