@@ -1,0 +1,14 @@
+{
+  "name": "sitara-vite-nunjucks",
+  "version": "1.0.0",
+  "description": "Sitara Institute Website (Vite + Nunjucks)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-nunjucks": "^0.1.0"
+  }
+}

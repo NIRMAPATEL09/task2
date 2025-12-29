@@ -1,0 +1,51 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Animation Canvas Container -->
+        <canvas id="domeCanvas"></canvas>
+        
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">Sitara – <br><span class="text-gradient">Engineering the Future</span></h1>
+                    <p class="hero-subtitle">Innovation-driven BTech education designed to build the next generation of tech leaders. Experience excellence in every byte.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                        <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding" id="programs">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Academics</h3>
+                        <p class="text-secondary">World-class curriculum fused with practical application. We don't just teach technology; we create it.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <div class="card-icon">🔬</div>
+                        <h3>Research</h3>
+                        <p class="text-secondary">State-of-the-art labs fostering innovation in AI, Robotics, and Sustainable Energy.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <div class="card-icon">🌍</div>
+                        <h3>Campus Life</h3>
+                        <p class="text-secondary">A vibrant, futuristic campus ecosystem ensuring holistic growth and collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
